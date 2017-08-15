@@ -1,0 +1,8 @@
+init_config:
+
+instances:
+        - host : db-shared-us-east-1-yolo-8058.aptible.in
+          port : 24714
+          username : datadog
+          password : asdfiubasdfiubasdf
+          ssl : True
