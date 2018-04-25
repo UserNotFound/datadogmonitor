@@ -8,7 +8,7 @@ RUN apt-get update \
 RUN sh -c "echo 'deb https://apt.datadoghq.com/ stable main' > /etc/apt/sources.list.d/datadog.list"
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C7A7DA52
 
-RUN apt-get update && apt-get install -y datadog-agent
+RUN apt-get update && apt-get -y install --allow-unauthenticated datadog-agent
 
 ADD postgres.yaml /etc/dd-agent/conf.d/
 
